@@ -17,7 +17,7 @@ form.addEventListener("submit", function(event) {
         isValid = false;
         messages.push("Username must be at least 3 characters long.");
     }
-    if (!email.includes('@') || !email.includes('.')) {
+    if (!email.includes('@') && !email.includes('.')) {
         isValid = false;
         messages.push("Email must contain @ and .");
     }
