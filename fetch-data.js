@@ -10,7 +10,7 @@ async function fetchUserData(){
             const list = document.createElement('li');
             list.textContent = users.name;
             userList.append(list);
-            dataContainer.append(userList);
+            dataContainer.appendChild(userList);
         });
     }catch(err)
     {
